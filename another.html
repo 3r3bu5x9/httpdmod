@@ -12,6 +12,15 @@
             Another page
         </h1>
     </center>
-
+    <center>
+        <label id="labeltext">
+            <button >Show data!</button>
+        </label>
+    </center>
+    <script>
+        const loadText = ()=>{
+            document.getElementById("labeltext").innerHTML = sessionStorage.getItem("data")
+        }
+    </script>
 </body>
 </html>
