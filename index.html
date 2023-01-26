@@ -18,6 +18,12 @@
         </h1>
     </center>
     <center>
+        <label name="name">
+            <input id="textbox" type="text" value=""/>
+            <button onclick="doStuff">Submit</button>
+        </label>
+    </center>
+    <center>
         <ul style="color: cornflowerblue;">
             <li>
                 v1
@@ -39,5 +45,10 @@
             </li>
         </ul>
     </center>
+    <script>
+        const doStuff = () => {
+            sessionStorage.setItem("data", document.getElementById("textbox").value)
+        }
+    </script>
 </body>
 </html>
