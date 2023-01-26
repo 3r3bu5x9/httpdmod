@@ -49,8 +49,9 @@
         </ul>
     </center>
     <script>
-        const doStuff = () => {
-            window.sessionStorage.setItem("data", document.getElementById("textbox").value)
+        var doStuff = () => {
+            var item = document.getElementById("textbox")
+            window.sessionStorage.setItem(item.value)
         }
     </script>
 </body>
